@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>„Café Aroma”</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="cafe.css">
+   
+
+ 
 </head>
 
 <body>
@@ -25,6 +30,9 @@
                     <a class="nav-link" href="#menu">Menü</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#contact">Kapcsolat</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#location">Elhelyezkedés</a>
                 </li>
             </ul>
@@ -33,14 +41,40 @@
         <!-- Bemutatkozás -->
         <article class="p-3">
             <h2 class="my-4">Üdvözöljük a Café Aromában!</h2>
-            <div>
+            <div class="container">
+                <div class="row ">
+                    <div class="col text-justify">
+                      <p>
+                        Üdvözöljük a Café Aromában, Szeged szívében található egyedülálló kávézónkban, ahol a kávézás élményét új szintre emeljük. 2005 óta szolgáljuk ki a kávé szerelmeseit, akik igazi minőségre és különleges ízekre vágynak. Családias hangulatunkkal és barátságos kiszolgálásunkkal igyekszünk minden vendégünknek otthonos érzést nyújtani.
+                      </p>
+                        <p>
+                         A Café Aroma több mint csak egy kávézó. Itt találkozási pontot kínálunk a helyi közösség számára, ahol barátok találkozhatnak, családok tölthetnek el  kellemes órákat, vagy akár üzleti találkozók helyszíne is lehet. Büszkék vagyunk rá, hogy válogatott, prémium minőségű kávéinkkal és kézzel készített  süteményeinkkel kényeztethetjük vendégeinket.
+                        </p>
+
+                        
+                       
+                    </div>
+                    
+                    <div class="col">
+                      <img  src="./images/interior.jpg" alt="„Café Aroma kávézó”"  title="„Café Aroma kávézó”">
+                    </div>
+                    <p>
+                        Kínálatunkban a klasszikus espresso és cappuccino mellett számos modern kávékülönlegesség is megtalálható, mint például a jeges kávék és szezonális ízesítésű latték. Mindezek mellett vegán vendégeinket is szeretettel várjuk vegán süteményválasztékunkkal, amelyeket mindig frissen, helyi alapanyagokból készítünk.
+                    </p>
+                    
+
+                    <p>
+                        A Café Aroma tökéletes hely a kikapcsolódásra, ahol a kávézás rituáléja egyesül a modern gasztronómiai élményekkel. Látogasson el hozzánk, és engedje, hogy elvarázsoljuk az ízlelőbimbóit, miközben élvezi a kávézónk nyújtotta meghitt atmoszférát.
+                    </p>
+                  </div>
+                
 
             </div>
 
             <!-- Menü -->
             <h2 id="menu" class="my-4">Menünk</h2>
-            <div>
-                <div>
+            <div class="row text-justify">
+                <div class="col-xl-4 col-md-6">
                     <h4>Espresso</h4>
                     <p><span >Prémium minőségű kávébabok:</span> Kizárólag magas minőségű,
                         gondosan válogatott arabica babokból készül, amelyeket a világ legjobb termőterületeiről
@@ -52,7 +86,7 @@
                         tökéletes ízharmoniáját. </p>
 
                 </div>
-                <div>
+                <div class="col-xl-4 col-md-6">
                     <h4>Cappuccino</h4>
                     <p><span>Gazdag ízvilág:</span> A cappuccino egy klasszikus olasz
                         kávékülönlegesség, amely egyenlő részekből áll espressóból, meleg tejhabból és gőzölt tejfölből.
@@ -63,10 +97,10 @@
                         leveleket alkotnak a tejhabbal, ami nemcsak ízében, de látványában is maradandó élményt nyújt.
                     </p>
                 </div>
-                <div>
+                <div class="col-xl-4 col-md-6">
                     <h4>Kávé árlista</h4>
                     <table class="table">
-                        <thead>
+                        <thead class="bg-dark text-white">
                             <tr>
                                 <th>Kávé típusa</th>
                                 <th>Ár</th>
@@ -86,6 +120,10 @@
                                 <td>600 Ft</td>
                             </tr>
                             <tr>
+                                <td>Latte Macchiato</td>
+                                <td>650 Ft</td>
+                            </tr>
+                            <tr>
                                 <td>Flat White</td>
                                 <td>700 Ft</td>
                             </tr>
@@ -95,25 +133,27 @@
             </div>
 
             <!-- Elérhetőségek -->
-
-
-            <div class="row">
-                <div>
-                    Üzemeltető: Horváth Anna
-                    Cím: 6720 Szeged, Kávé utca 1.
-                    Telefonszám: +36 20 555 1234
-                    Email: info@cafe-arroma.hu
+            <h4 id="contact">Elérhetőségek</h4>
+            <div class="row mx-2">
+                <div class="col-8">
+                    <ul>
+                        <li>Üzemeltető: Horváth Anna</li>
+                        <li>Cím: 6720 Szeged, Kávé utca 1.</li>
+                        <li>Telefonszám: +36 20 555 1234</li>
+                        <li>Email: info@cafe-arroma.hu</li>
+                        
+                    </ul>
                 </div>
                 <!-- Üzenetküldő űrlap -->
-                <div>
+                <div class="col-4 urlap">
                     <form>
                         <div class="form-group">
                             <label for="name">Név:</label>
-                            <input type="text" id="name" required>
+                            <input class="form-control" type="text" id="name" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Üzenet:</label>
-                            <textarea id="message" rows="3" required></textarea>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Küldés</button>
                     </form>
@@ -128,12 +168,12 @@
         <div id="map-container" style="height: 400px; width: 100%;">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2732.0657647250474!2d20.148550815564545!3d46.25301037911869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4743663f24e0976f%3A0xf50af3b04dafe604!2sSzeged!5e0!3m2!1sen!2shu!4v1609430691973!5m2!1sen!2shu"
-                width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0">
+               >
             </iframe>
         </div>
         <!-- Lábléc -->
-        <footer class="p-2">
+        <footer class="p-2 text-center">
+           <p>Készítette:  <a href="https://bankitatabanya.hu/" target="_blank">Szántó Áron</a></p>
 
         </footer>
     </div>
